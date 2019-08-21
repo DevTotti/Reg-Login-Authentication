@@ -9,8 +9,8 @@ from flask_jwt_extended import (create_access_token)
 
 app = Flask(__name__)
 
-app.config['MONGO_DBNAME'] = 'mongotask'
-app.config["MONGO_URI"] = "mongodb://localhost:27017/mongotask"
+app.config['MONGO_DBNAME'] = 'mongoreg'
+app.config["MONGO_URI"] = "mongodb://localhost:27017/mongoreg"
 app.config["JWT_SECRET_KEY"] = 'secret'
 
 mongo = PyMongo(app)
